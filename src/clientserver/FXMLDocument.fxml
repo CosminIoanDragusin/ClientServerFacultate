@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientserver.FXMLDocumentController">
+    <children>
+        <Button fx:id="btnToClient" layoutX="582.0" layoutY="474.0" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="94.0" text="Send to Client" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane layoutY="-2.0" prefHeight="103.0" prefWidth="679.0">
+         <children>
+            <Label fx:id="field_Server" layoutX="88.0" layoutY="28.0" prefHeight="48.0" prefWidth="450.0" text="Server" />
+         </children>
+      </Pane>
+      <TextFlow fx:id="FlowServer" layoutX="9.0" layoutY="120.0" prefHeight="348.0" prefWidth="655.0" />
+      <TextField fx:id="textServer" layoutX="6.0" layoutY="474.0" prefHeight="48.0" prefWidth="576.0" />
+      <Label fx:id="field_waiting" layoutX="186.0" layoutY="101.0" prefHeight="17.0" prefWidth="274.0" text="here is waiting" />
+    </children>
+</AnchorPane>
